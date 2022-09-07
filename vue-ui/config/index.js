@@ -12,6 +12,7 @@ module.exports = {
     assetsPublicPath: '/',
     proxyTable: {
       '/api': {
+        //目标后端的端口
         target: 'http://localhost:8443',
         changeOrigin: true,
         pathRewrite: {
@@ -21,7 +22,8 @@ module.exports = {
     },
 
     // Various Dev Server settings
-    host: 'localhost', // can be overwritten by process.env.HOST
+    host: 'localhost', // can be overwritten by process.env.HOST\
+    //运行端口
     port: 8848, // can be overwritten by process.env.PORT, if port is in use, a free one will be determined
     autoOpenBrowser: false,
     errorOverlay: true,
