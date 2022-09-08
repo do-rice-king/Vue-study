@@ -27,7 +27,7 @@ public class LoginController {
         if (null == user) {
             return new Result(400, "shit");
         } else {
-            return new Result(200, null);
+            return new Result(200, "成功了憨憨");
         }
     }
 }
